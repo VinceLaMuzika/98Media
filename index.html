@@ -451,16 +451,24 @@
       href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
     />
     <style>
-      @keyframes fade-in-left {
-        0% {
-          opacity: 0;
-          transform: translateX(-20px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
+  @keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.logo-container {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
     </style>
   </head>
   <body>
@@ -522,7 +530,7 @@
                   </div>
                 </div>
                 <nav class="home-links1">
-                  <span>Home</span>
+                  <span>Home<span class="sr-only">(current)</span>
                   <span class="home-nav21 bodySmall">Services</span>
                   <span class="home-nav31 bodySmall">Portfolio</span>
                   <span class="home-nav41 bodySmall">About</span>
@@ -648,9 +656,12 @@
                   <a href="portfolio/index.html" class="home-hero-button1 buttonFilled" style="margin-left: 40px;">
                     Explore Our Portfolio
                   </a>
-                  <button class="buttonFlat" style="margin-left: 20px;">Learn More&nbsp;→</button>
+                  <button class="buttonFlat">
+                    <a href="about/index.html" class="home-hero-button6"
+                    style="margin-left: 20px;">Learn More&nbsp;→
+                  </button>
                 </div>
-
+                
                 </div>
               </div>
             </div>
@@ -762,35 +773,31 @@
               </div>
             </div>
           </div>
-          <span class="bodySmall">
-            <span>
-              Client Portfolio
-            </span>
+        
         </div>
+        <div style="text-align: center;">Client Portfolio</div>
+        
         <div class="home-pricing"></div>
-        <div class="home-banner"style="background-color: white;">
-          <div class="bannerContainer home-banner1">
-              <span class="home-banner-sub-heading bodySmall">
-                <div class="logo-container" style="width: 100%; overflow: hidden; white-space: nowrap;">
-                  <img src="/logos/artisticw.jpg" alt="Artistic Logo" style="display: inline-block; width: 200px; height: 200px;">
-                  <img src="/logos/802.jpg" alt="Artistic Logo" style="display: inline-block; width: 200px; height: 200px;">
-                  <img src="/logos/teen.jpg" alt="Artistic Logo" style="display: inline-block; width: 400px; height: 200px;">
-                  <img src="/logos/wine.jpg" alt="Artistic Logo" style="display: inline-block; width: 200px; height: 200px;">
-                  <img src="/logos/law.jpg" alt="Artistic Logo" style="display: inline-block; width: 200px; height: 200px;">
-                 
-                  <!-- Add more logo images here if needed -->
-              </div>
-              
-              </span>
-          </div>
+<div class="home-banner" style="background-color: white; overflow: hidden;">
+  <div class="bannerContainer home-banner1">
+    <span class="home-banner-sub-heading bodySmall">
+      <div class="logo-container" style="width: 100%; white-space: nowrap;">
+        <img src="/logos/artistic.png" alt="Artistic Logo" class="logo" style="display: inline-block; width: 200px; height: 200px;">
+        <img src="/logos/802.png" alt="Artistic Logo" class="logo" style="display: inline-block; width: 200px; height: 200px;">
+        <img src="/logos/teen.png" alt="Artistic Logo" class="logo" style="display: inline-block; width: 400px; height: 200px;">
+        <img src="/logos/wine.png" alt="Artistic Logo" class="logo" style="display: inline-block; width: 200px; height: 200px;">
+        <img src="/logos/law.png" alt="Artistic Logo" class="logo" style="display: inline-block; width: 200px; height: 200px;">
+        <!-- Add more logo images here if needed -->
       </div>
+    </span>
+    <p style="text-align: center;">At 98Media, we specialize in providing top-tier Photography, Videography, and Graphic Design services. With a passion for creativity and a commitment to excellence, we capture moments and tell stories that leave a lasting impact.</p>
+  
+  </div>
+</div>
+
       
                   </span>
-                </span>
-              </span>
-            </span>
-            <span>At 98Media, we specialize in providing top-tier Photography, Videography, and Graphic Design services. With a passion for creativity and a commitment to excellence, we capture moments and tell stories that leave a lasting impact.</span>
-          </div>
+          
         </span>
                 </span>
                 <span>
