@@ -3,36 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>About Us</title>
+  <title>About 98Media</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <!-- Google Fonts - Roboto -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f8f9fa; /* Light gray background color */
-    }
-
-    .container {
-      margin-top: 30px;
-    }
-
-    .navbar {
-      margin-bottom: 20px;
-    }
-
-    .navbar-brand img {
-      margin-right: 10px;
-    }
-
-    .navbar-brand {
-      display: flex;
-      align-items: center;
-    }
-
-    h2 {
-      font-weight: 700;
+    .logo-img {
+      max-height: 40px; /* Adjust the maximum height as needed */
+      width: auto;
     }
   </style>
 </head>
@@ -40,21 +19,26 @@
 
 <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
-    <img src="98Media.png" alt="98Media Logo" width="90" height="30" class="d-inline-block align-top">
-    
+  <a class="navbar-brand" href="/index.html">
+    <img src="/Portfolio/98Media.png" alt="Your Logo" class="logo-img">
   </a>
+
+  <!-- Button to toggle navigation -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+
+  <!-- Collapsible content -->
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <a class="nav-link" href="/index.html">Home</a>
       </li>
-      
       <li class="nav-item">
         <a class="nav-link" href="/services/index.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about/index.html">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/contact/index.html">Contact</a>
@@ -63,23 +47,39 @@
   </div>
 </nav>
 
-<!-- About Us Content -->
-<div class="container">
-  <h2 style="text-align: center;">About Us</h2>
-  <p style="text-align: center;">
-    Welcome to 98Media, your premier media company dedicated to creating and delivering high-quality content. 
-    We are passionate about making memories and telling stories that resonate with our audience.
-    Our team of creative professionals is committed to excellence in every project we undertake.
-  </p>
-</div>
-
-  <!-- Add more content about your company as needed -->
+<!-- About Us Section -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h2 class="text-center">About 98Media</h2>
+      <p>Welcome to 98Media, where creativity meets innovation.</p>
+      <p>Located at the heart of Gauteng, South Africa, we are a leading media company dedicated to delivering high-quality services tailored to your needs. With years of experience in the industry, we pride ourselves on our commitment to excellence and our passion for storytelling.</p>
+      <p>At 98Media, we specialize in a wide range of media services, including:</p>
+      <ul>
+        <li><strong>Photography</strong>: Capturing moments that matter, from events to portraits, with precision and creativity.</li>
+        <li><strong>Videography</strong>: Crafting compelling visual narratives that bring your ideas to life, whether it's promotional videos, documentaries, or event coverage.</li>
+        <li><strong>Graphic Design</strong>: Designing captivating visuals that make your brand stand out, from logos and branding to marketing materials and more.</li>
+        <li><strong>Internet Streaming</strong>: Leveraging the power of technology to help you reach a wider audience by broadcasting events, conferences, and more, live to your viewers anywhere.</li>
+      </ul>
+      <p>We believe in the power of collaboration and are dedicated to understanding and meeting your specific needs. Our team of skilled professionals is here to turn your vision into reality, ensuring that every project is executed with precision and creativity.</p>
+      <p>Thank you for choosing 98Media. We look forward to working with you and helping you achieve your goals.</p>
+      <p class="text-center"><strong>Connect with us:</strong></p> <!-- Centered -->
+      <ul class="list-inline text-center">
+        <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100023081541841"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+        <li class="list-inline-item"><a href="mailto:98mediaservices@gmail.com"><i class="fas fa-envelope-square fa-2x"></i></a></li>
+        <li class="list-inline-item"><a href="tel:0658994400"><i class="fab fa-whatsapp-square fa-2x"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.instagram.com/98eight_pictures/"><i class="fab fa-instagram-square fa-2x"></i></a></li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 <!-- Bootstrap JS and Popper.js (required for Bootstrap JavaScript components) -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Font Awesome JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 
 </body>
 </html>

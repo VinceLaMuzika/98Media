@@ -10,7 +10,7 @@
   .logo-img {
     max-height: 40px; /* Adjust the maximum height as needed */
     width: auto;
-}
+  }
 </style>
 
 </head>
@@ -18,49 +18,66 @@
 
 <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="98Media.png">
+  <a class="navbar-brand" href="/index.html">
     <img src="/Portfolio/98Media.png" alt="Your Logo" class="logo-img">
-</a>
+  </a>
 
-
+  <!-- Button to toggle navigation -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+
+  <!-- Collapsible content -->
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="/index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/services/index.html">Services</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/about/index.html">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/services/index.html">Services</a>
+        <a class="nav-link" href="/contact/index.html">Contact</a>
       </li>
-      
     </ul>
   </div>
 </nav>
 
 <!-- Contact Form -->
 <div class="container mt-5">
-  <h2>Contact Us</h2>
-  <form>
-    <div class="form-group">
-      <label for="name">Your Name:</label>
-      <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Type your message here" required></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
     </div>
-    <div class="form-group">
-      <label for="email">Your Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-    </div>
-    <div class="form-group">
-      <label for="message">Message:</label>
-      <textarea class="form-control" id="message" rows="5" placeholder="Type your message here" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+  </div>
 </div>
+
+<!-- Footer -->
+<footer class="footer mt-auto py-3 bg-dark text-white">
+  <div class="container text-center">
+    <span>© 2024 98Media.</span>
+  </div>
+</footer>
 
 <!-- Bootstrap JS and Popper.js (required for Bootstrap JavaScript components) -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
